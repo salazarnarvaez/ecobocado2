@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/configuration-schema.json",
+  "name": "app-descompr",
+  "compatibility_date": "2025-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": ".open-next/worker.js",
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "app-descompr-db",
+      "database_id": "97dd351a-adfc-471d-8fe1-c9b9ab1e7e22",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}
